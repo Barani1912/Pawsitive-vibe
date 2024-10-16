@@ -51,7 +51,7 @@ const DogAdoptionForm = () => {
       <form onSubmit={handleSubmit} className="adoption-form">
         
     
-        <h2>Personal Information</h2>
+        <h2>Personal Informations</h2>
         <div className="form-group">
           <label htmlFor="fullName">Full Name:</label>
           <input type="text" id="fullName" name="fullName" value={formData.fullName} onChange={handleChange} required />
@@ -77,12 +77,12 @@ const DogAdoptionForm = () => {
         
         <h2>Dog Preference</h2>
         <div className="form-group">
-          <label htmlFor="dogName">Dog's Name(if applicable):</label>
+          <label htmlFor="dogName">Dog's Name (if applicable):</label>
           <input type="text" id="dogName" name="dogName" value={formData.dogName} onChange={handleChange} />
         </div>
 
         <div className="form-group">
-          <label htmlFor="breed">Preferred Breed(if any):</label>
+          <label htmlFor="breed">Preferred Breed (if any):</label>
           <input type="text" id="breed" name="breed" value={formData.breed} onChange={handleChange} />
         </div>
 
