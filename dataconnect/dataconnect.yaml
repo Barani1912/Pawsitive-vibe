@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "pawsitive-vibes"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "pawsitive-vibes-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
