@@ -1,38 +1,271 @@
-.App {
-  text-align: center;
+
+/* .nav-list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+  background-image:url(https://iadopt.in/wp-content/uploads/2020/02/Bg-2.jpg);
+  background-blend-mode: multiply;
+  background-color:rgb(239, 109, 62);
+  padding: 20px;
+  font-weight: bold;
+} */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
+  background-color: #fff; 
+  padding: 0px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.base-content {
+  margin-top: 190px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  padding: 2%;
+  justify-content: center;
+  gap: 7%;
+  background-image:url(https://iadopt.in/wp-content/uploads/2020/02/Bg-2.jpg);
+  background-blend-mode: multiply;
+  background-color:rgb(239, 109, 62);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
+.navbar li a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar li a.active {
+  background-color: rgb(235, 241, 243); 
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.navbar li a:hover {
+  background-color: lightgray; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.base-header-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-footer{
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: 10px; */
+  background-image:url(https://iadopt.in/wp-content/uploads/2020/02/Bg-2.jpg);
+  background-blend-mode: multiply;
+  background-color:rgb(239, 109, 62);
+}
+
+
+.footerLottie{
+width: 20%;
+height: auto;
+position: relative;
+top: 70px;
+left: 40%;
+}
+
+footer{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.home-page-img-parent-div {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.home-page-img-child-div {
+  width: 80%;
+  margin: 0 auto; 
+  background-color: white; 
+  padding: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+.homeCarousel{
+  margin: 2% 7% 2% 7%;
+  padding: 1% 0;
+}
+.corausel-child{
+  border-radius: 24px;
+}
+
+
+
+
+.action-btns{
+  padding: 1.5%;
+  border: none;
+  background-color: coral;
+  border-radius: 10px;
+
+}
+.action-btns:hover{
+  transform: scale(1.05);
+}
+.action-btns2{
+  padding: 1.5%;
+  border: none;
+  background-color: coral;
+  border-radius: 10px;
+  
+}
+.action-btns2:hover{
+  transform: scale(1.05);
+}
+
+.adoption-tips{
+  margin:5%;
+  padding: 2%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* .adoption-tips:hover{
+  transform: scale(1.05);
+  transition: all ease-in-out .5s;
+} */
+
+
+
+.adopt-pet-parent-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.adopt-pet-card{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+
+  width: 260px;
+  height: 320px;
+  background-image:url(https://iadopt.in/wp-content/uploads/2020/02/Bg-2.jpg);
+  background-blend-mode: multiply;
+  background-color:rgb(244, 110, 61);
+  /* border: 1px solid rgb(209, 130, 26); */
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+.pet-card-img{
+  border-radius: 30px;
+  padding: 10px;
+  height: 150px;
+}
+.pet-card-btn{
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  border: none;
+}
+.pet-card-btn:hover{
+  background-color: black;
   color: white;
+  transform: scale(1.1);
+  transition: all ease-in 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.detailss{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dogImgDetail{
+  width: 50%;
 }
+
+.parent-dogPersonalDetails{
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+  padding: 1% 3% 1% 3%;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+.child-dogPesonalDetails{
+  display: flex;
+  gap: 5rem;
+}
+
+.adoptNowBtn{
+  padding:10%;
+  width:7rem;
+  border: none;
+  color: black;
+  background-color: coral;
+  border-radius: 10px;
+}
+.adoptNowBtn:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* volunteer page*/
+
+.volunteer-content{
+margin: 2%;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.why-volunteer{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.volunteer-opportunities{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.get-involved{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+

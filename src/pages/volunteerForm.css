@@ -1,0 +1,68 @@
+.volunteer-form-container {
+    max-width: 800px;
+    margin: 3% auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-image:url(https://iadopt.in/wp-content/uploads/2020/02/Bg-2.jpg);
+    background-blend-mode: multiply;
+    background-color:rgb(239, 109, 62);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .volunteer-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group select,
+  .form-group textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  .form-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
