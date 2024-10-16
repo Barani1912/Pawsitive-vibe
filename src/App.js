@@ -81,14 +81,10 @@ import VolunteerForm from './pages/volunteerForm';
 
 
 function App() {
-
+  
    const[details,setDetails]=useState(data)
-   //const [isLoggedIn, setIsLoggedIn] = useState(false);
-
- 
 
   return (
-    
   <Routes>
         <Route path="/" element={<HomePage/>} />
         <Route path="/adopt-a-pet" element={<AdoptPet
